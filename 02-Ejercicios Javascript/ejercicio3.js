@@ -8,16 +8,13 @@ function imprimirPoblacionOsos(numeroDeMeses) {
             console.log("Van a existir " + totalOsos + " osos de anteojos despu\u00E9s del mes " + (1 + i));
         }
         else {
-            if (totalOsos > 10000) {
-                totalOsos = totalOsos / 2;
-                console.log("Removiendo " + totalOsos + " osos de anteojos de la poblaci\u00F3n");
-                console.log("Van a existir " + totalOsos + " osos de anteojos despu\u00E9s del mes " + (1 + i));
-                totalOsos = totalOsos * 4;
-            }
-            else {
-                totalOsos = totalOsos * 4;
-                console.log("Van a existir " + totalOsos + " osos de anteojos despu\u00E9s del mes " + (1 + i));
-            }
+            totalOsos = totalOsos * 4;
+            console.log("Van a existir " + totalOsos + " osos de anteojos despu\u00E9s del mes " + (1 + i));
+        }
+        if (totalOsos > 10000) {
+            totalOsos = totalOsos / 2;
+            console.log("Removiendo " + totalOsos + " osos de anteojos de la poblaci\u00F3n");
+            console.log("Van a existir " + totalOsos + " osos de anteojos despu\u00E9s del mes " + (1 + i));
         }
     }
 }
